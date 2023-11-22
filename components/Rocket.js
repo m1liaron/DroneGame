@@ -17,8 +17,8 @@ const Rocket = props => {
         <ImageBackground
             source={rocketPicture}
             style={{
-                // borderWidth: 1,
-                // borderColor: color,
+                borderWidth: 1,
+                borderColor: color,
                 borderStyle: 'solid',
                 position: 'absolute',
                 left: xBody,

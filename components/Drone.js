@@ -17,8 +17,8 @@ const Drone = (props) => {
     <ImageBackground
       source={bird}
       style={{
-        // borderWidth: 1,
-        // borderColor: color,
+        borderWidth: 1,
+        borderColor: color,
         borderStyle: 'solid',
         position: 'absolute',
         left: xBody,

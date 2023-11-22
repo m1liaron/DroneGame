@@ -12,12 +12,12 @@ const Physics = (entities, { touches, events, time, dispatch }) => {
     if (e.type === 'move_up') {
       Matter.Body.setVelocity(entities.Drone.body, {
         x: 0,
-        y: -2,
+        y: -5,
       });
     } else if (e.type === 'move_down') {
       Matter.Body.setVelocity(entities.Drone.body, {
         x: 0,
-        y: 2,
+        y: 5,
       });
     }
   });
@@ -37,7 +37,7 @@ const Physics = (entities, { touches, events, time, dispatch }) => {
         Matter.Body.setPosition(entities[`Rocket${index}`].body, pipeSizePos)
     }
 
-    Matter.Body.translate(entities[`Rocket${index}`].body, {x: -8, y:0})
+    Matter.Body.translate(entities[`Rocket${index}`].body, {x: -6, y:0})
   }
 
   // Matter.Body.translate(entities[`Rocket`].body, { x: -8, y: 0 });
